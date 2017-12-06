@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'pages/HelloReact'
+
   resources :metadata_application_profile_fields, controller: 'metadata_application_profile/fields'
 
   mount Blacklight::Engine => '/'
