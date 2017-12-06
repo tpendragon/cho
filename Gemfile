@@ -14,6 +14,7 @@ gem 'valkyrie', github: 'samvera-labs/valkyrie'
 # Supporting gems
 gem 'coffee-rails', '~> 4.2'
 gem 'execjs'
+gem 'foreman'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'json'
