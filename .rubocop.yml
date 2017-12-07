@@ -6,6 +6,11 @@ inherit_from:
 
 AllCops:
   TargetRubyVersion: 2.4.1
+  Excludes:
+    - node_modules/**/*
+    - db/**/*
+    - tmp/**/*
+    - bin/**/*
 
 RSpec/DescribeClass:
   Exclude:
