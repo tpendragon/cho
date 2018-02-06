@@ -1,0 +1,21 @@
+<%= form_with(model: test_model, local: true, enctype:"multipart/form-data") do |form| %>
+  <input name="test_model[file]" type="hidden" value="<%= @test_model.cached_file_data %>">
+  <%= form.hidden_field :file, value: @test_model.cached_file_data %>
+  <%= form.file_field :file %>
+
+  <% if test_model.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(test_model.errors.count, "error") %> prohibited this test_model from being saved:</h2>
+
+      <ul>
+      <% test_model.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
