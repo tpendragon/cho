@@ -46,7 +46,6 @@ ActiveRecord::Schema.define(version: 20180205194720) do
   end
 
   create_table "test_models", force: :cascade do |t|
-    t.text "file_data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
