@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :test_models
   mount Blacklight::Engine => '/'
   root to: 'catalog#index'
   concern :searchable, Blacklight::Routes::Searchable.new

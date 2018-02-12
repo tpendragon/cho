@@ -10,6 +10,7 @@ end
 # Main gems
 gem 'rails', '~> 5.1.3'
 gem 'valkyrie', github: 'samvera-labs/valkyrie'
+gem 'dragonfly'
 
 # Supporting gems
 gem 'coffee-rails', '~> 4.2'
