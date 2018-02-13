@@ -10,8 +10,8 @@
       </ul>
     </div>
   <% end %>
-  <%= form.file_field :file %>
-  
+  <%= form.file_field :file , webkitdirectory: "webkitdirectory", mozdirectory: "mozdirectory", msdirectory: "msdirectory", odirectory: "odirectory", directory: "directory", multiple: "multiple" %>
+
   <div class="actions">
     <%= form.submit %>
   </div>

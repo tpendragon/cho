@@ -69,6 +69,6 @@ class TestModelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def test_model_params
-      params.fetch(:test_model, {}).permit(:file)
+      params.fetch(:test_model, {}).permit(:file => [])
     end
 end
