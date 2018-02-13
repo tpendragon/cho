@@ -24,6 +24,7 @@ class TestModelsController < ApplicationController
   # POST /test_models
   # POST /test_models.json
   def create
+    byebug
     @test_model = TestModel.new(test_model_params)
 
     respond_to do |format|
@@ -70,6 +71,6 @@ class TestModelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def test_model_params
-      params.fetch(:test_model, {}).permit(:file)
+      params.fetch(:test_model, {}).permit(files: [])
     end
 end

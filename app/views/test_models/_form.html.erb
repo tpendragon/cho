@@ -1,7 +1,7 @@
 <%= form_with(model: test_model, local: true, enctype:"multipart/form-data") do |form| %>
-  <input name="test_model[file]" type="hidden" value="<%= @test_model.cached_file_data %>">
-  <%= form.hidden_field :file, value: @test_model.cached_file_data %>
-  <%= form.file_field :file %>
+  <!--<input name="test_model[file]" type="hidden" value="<%= @test_model.cached_files_data %>">-->
+  <!--<%= form.hidden_field :files, value: @test_model.cached_files_data %>-->
+  <%= form.file_field :files , webkitdirectory: "webkitdirectory", mozdirectory: "mozdirectory", msdirectory: "msdirectory", odirectory: "odirectory", directory: "directory", multiple: "multiple", name: 'test_model[files][]' %>
 
   <% if test_model.errors.any? %>
     <div id="error_explanation">

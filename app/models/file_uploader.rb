@@ -1,3 +1,4 @@
 class FileUploader < Shrine
-    # plugins and uploading logic
+  plugin :versions
+  # plugins and uploading logic
 end
