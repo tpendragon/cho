@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
+require 'ldap_disambiguate'
 
-describe LdapUser do
+describe LdapDisambiguate::LdapUserAttributes do
   let(:user)        { ['mocked ldap user'] }
   let(:empty_user)  { User.new }
 
