@@ -10,6 +10,28 @@ GIT
       rubyzip
 
 GIT
+  remote: https://github.com/samvera-labs/valkyrie.git
+  revision: 8f28f1bb8e1f826ce278a377c91915526f7692b1
+  branch: prepare_for_2
+  specs:
+    valkyrie (1.2.2)
+      active-fedora
+      active-triples
+      activemodel
+      activerecord
+      activesupport
+      draper
+      dry-struct
+      dry-types (~> 0.12.0)
+      json
+      json-ld
+      pg
+      railties
+      rdf
+      reform
+      reform-rails
+
+GIT
   remote: https://github.com/stympy/faker.git
   revision: 098f0455d5c91ae55e5e4ece32e117c557dabbee
   branch: master
@@ -622,22 +644,6 @@ GEM
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.0)
     validatable (1.6.7)
-    valkyrie (1.2.2)
-      active-fedora
-      active-triples
-      activemodel
-      activerecord
-      activesupport
-      draper
-      dry-struct
-      dry-types (~> 0.12.0)
-      json
-      json-ld
-      pg
-      railties
-      rdf
-      reform
-      reform-rails
     vegas (0.1.11)
       rack (>= 1.0.0)
     warden (1.2.7)
@@ -721,7 +727,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   twitter-typeahead-rails (= 0.11.1.pre.corejavascript)
   uglifier (>= 1.3.0)
-  valkyrie (~> 1.2.0)
+  valkyrie (~> 1.2.0)!
   web-console (>= 3.3.0)
   xray-rails
 
